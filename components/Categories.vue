@@ -21,6 +21,11 @@
   background-color: #f8f8f8;
   overflow-x: auto;
   white-space: nowrap;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.categories::-webkit-scrollbar {
+  display: none;  /* WebKit */
 }
 .categories-wrapper {
   display: inline-flex;
