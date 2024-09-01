@@ -1,10 +1,10 @@
 <template>
   <div>
     <Header />
+    <Hero />
+    <Categories />
     <NuxtPage />
-    <footer>
-      <p>&copy; 2024 Life Academy</p>
-    </footer>
+    <Footer />
   </div>
 </template>
 
@@ -26,6 +26,3 @@ footer {
   color: #42b983;
 }
 </style>
-<script setup lang="ts">
-import Header from "~/components/Header.vue";
-</script>

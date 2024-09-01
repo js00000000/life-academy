@@ -11,3 +11,11 @@ useSeoMeta({
   description: 'Life Academy - Essential skills for a better life',
 })
 </script>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+</style>
