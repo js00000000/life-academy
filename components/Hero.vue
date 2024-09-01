@@ -11,7 +11,7 @@
 <style scoped>
 .hero {
   height: 100vh;
-  background-image: url('hero.jpeg');
+  background-image: url('/hero.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
