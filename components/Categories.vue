@@ -12,10 +12,10 @@
       </a>
       <a href="#" class="category-card">
         <i class="fas fa-comments"></i>
-        <h3>Communication</h3>
+        <h3>Communicate</h3>
       </a>
       <a href="#" class="category-card">
-        <i class="fas fa-user-circle"></i>
+        <i class="fas fa-user-check"></i>
         <h3>Self-Awareness</h3>
       </a>
       <a href="#" class="category-card">
@@ -35,14 +35,14 @@
 h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #1f2937;
   margin-bottom: 2rem;
+  color: #1f2937;
 }
 
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .category-card {
