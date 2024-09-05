@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="padding: 4em 5%;">
     <h2>How to Learn Fast</h2>
     <p>Here are some resources to help you learn fast:</p>
     <div class="video-grid">

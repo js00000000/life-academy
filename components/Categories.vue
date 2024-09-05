@@ -1,67 +1,88 @@
 <template>
   <section class="categories">
-    <div class="categories-wrapper">
-      <a href="/investment">Investment</a>
-      <span class="separator"></span>
-      <a href="#">Continuous Learning</a>
-      <span class="separator"></span>
-      <a href="#">Communicate</a>
-      <span class="separator"></span>
-      <a href="#">Self-Awareness</a>
-      <span class="separator"></span>
-      <a href="#">Stay Curious</a>
+    <h2>Explore Our Categories</h2>
+    <div class="category-grid">
+      <a href="/investment" class="category-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Investment</h3>
+      </a>
+      <a href="#" class="category-card">
+        <i class="fas fa-book-reader"></i>
+        <h3>Continuous Learning</h3>
+      </a>
+      <a href="#" class="category-card">
+        <i class="fas fa-comments"></i>
+        <h3>Communication</h3>
+      </a>
+      <a href="#" class="category-card">
+        <i class="fas fa-user-circle"></i>
+        <h3>Self-Awareness</h3>
+      </a>
+      <a href="#" class="category-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Stay Curious</h3>
+      </a>
     </div>
   </section>
 </template>
 
 <style scoped>
 .categories {
-  border-top: lightgrey solid 1px;
-  border-bottom: lightgrey solid 1px;
-  background-color: #f8f8f8;
-  overflow-x: auto;
-  white-space: nowrap;
-  scrollbar-width: none;  /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  padding: 4rem 5%;
+  background-color: #f3f4f6;
 }
-.categories::-webkit-scrollbar {
-  display: none;  /* WebKit */
-}
-.categories-wrapper {
-  display: inline-flex;
-  padding: 10px;
-  align-items: center;
-}
-a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  transition: color 0.3s;
-  padding: 10px 20px;
+
+h2 {
   text-align: center;
+  font-size: 2.5rem;
+  color: #1f2937;
+  margin-bottom: 2rem;
 }
-a:hover {
-  color: #e76f51;
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
 }
-.separator {
-  width: 1px;
-  height: 20px;
-  background-color: lightgrey;
-  margin: 0 5px;
+
+.category-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #6366f1;
+}
+
+.category-card h3 {
+  font-size: 1.25rem;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
   .categories {
-    padding: 0;
+    padding: 3rem 1rem;
   }
-  .categories-wrapper {
-    padding: 10px 0;
+
+  h2 {
+    font-size: 2rem;
   }
-  a {
-    padding: 10px 15px;
-  }
-  .separator {
-    height: 15px;
+
+  .category-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 </style>

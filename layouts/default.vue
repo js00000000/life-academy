@@ -1,28 +1,28 @@
 <template>
-  <div>
+  <div class="app-container">
     <Header />
-    <Hero />
-    <Categories />
-    <NuxtPage />
+    <main class="main-content">
+      <NuxtPage />
+    </main>
     <Footer />
   </div>
 </template>
 
 <style>
-header {
-  background-color: #42b983;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
+
+.main-content {
+  flex: 1;
+  padding-top: 70px; /* Add padding to account for the fixed header */
 }
-footer {
-  text-align: center;
-  margin-top: 20px;
-  color: #42b983;
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 60px; /* Adjust for mobile header height */
+  }
 }
 </style>
